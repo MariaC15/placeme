@@ -1,0 +1,7 @@
+{
+  "name": "placeme",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
