@@ -1,1 +1,50 @@
+ion-content{
+    --background: linear-gradient(0deg, rgba(53,0,200,1) 0%, rgba(249,0,255,1) 100%);
+    color: #ffffff;
+}
+.ion-text-center{
+    color: #ffffff;
+    // text-align: center;
+    // font-weight: 300;
+}
+h3{
+    font-size: 34px;
+}
+ion-list{
+    margin-top: 10%;
+    display: block;
+    background-color: transparent !important;
+}
+.item-input{
+    --background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+}
+ion-input{
+    font-size: 18px;
+    // padding: 15px;
+    --color: #ffffff;
+    font-weight: 500;
+    --placeholder-color: #ffffff !important;
+    --placeholder-opacity:none;
+    --placeholder-font-weight:600;
+}
+ ion-button{
+    padding: 2px 10px;
+    margin: auto;
+    // width: 85%;
+    // font-weight: 600;
+    font-size: 19px;
+}
+img{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+.item-recuperar-pass{
+    --background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
 
+}
+ 

@@ -1,7 +1,8 @@
 {
   "name": "placeme",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

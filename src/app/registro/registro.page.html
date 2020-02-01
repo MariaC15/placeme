@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-header mode="ios">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref (click)="dismiss()" color="tertiary"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Registrate</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <br>
+  <ion-list class="ion-padding">
+    <p class="ion-text-justify" color="tertiary">
+      Para publicar un anuncio es necesario que <u>compartas</u> y te registres.
+      <br>Debes indicarnos un email al cual te enviaremos un enlace de validación. Esté email no sera público,
+      solo se usará para gestionar tus anuncios.
+    </p>
+    <br>
+    <ion-item class="item-input">
+      <ion-input clearInput placeholder="Email" type="email" required="true" pattern="email"></ion-input>
+    </ion-item>
+    <br>
+    <br>
+    <br>
+    <ion-button expand="full" color="primary" (click)="enviar()">Enviar</ion-button>
+  </ion-list>
+  
+</ion-content>

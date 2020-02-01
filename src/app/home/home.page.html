@@ -1,14 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-list class="ion-padding">
+    <img src="../../assets/img/logo-blanco.png" alt="">
+    <h3 class="ion-text-center">Placeme</h3>
+    <ion-item class="item-input">
+      <ion-input clearInput placeholder="Email" type="email" required="true" pattern="email"></ion-input>
+    </ion-item>
+    <ion-item class="item-input">
+      <ion-input placeholder="Contraseña" type="password" required="true" pattern="password"></ion-input>
+    </ion-item>
+    <ion-item class="item-recuperar-pass ion-float-right" lines="none">
+      <p>Recuperar contraseña</p>
+    </ion-item>
+    <ion-button expand="full" color="primary" (click)="iniciar_sesion()">Iniciar Sesión</ion-button>
+    <br>
+    <br>
+    <br>
+    <ion-button expand="full" color="secondary" (click)="go_register()">Registrarse</ion-button>
+  </ion-list>
 </ion-content>
