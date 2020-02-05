@@ -1,3 +1,4 @@
+import { MasonryGalleryModule } from 'ngx-masonry-gallery';
 import { RegistroPageModule } from './registro/registro.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
+    MasonryGalleryModule,
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,

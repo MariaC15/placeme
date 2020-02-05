@@ -1,6 +1,6 @@
 import { RegistroPage } from './../registro/registro.page';
 import { Component} from '@angular/core';
-import { ModalController, AlertController,LoadingController } from '@ionic/angular';
+import { ModalController, AlertController,LoadingController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class HomePage {
   loading:any;
   constructor(private router: Router, private modalController: ModalController, private alertController: AlertController,
-    private loadingController: LoadingController) {}
+    private loadingController: LoadingController, private navCtrl:NavController) {}
 
   async presentLoading() {
     this.loading = await this.loadingController.create({
@@ -28,7 +28,12 @@ export class HomePage {
       const alert = await this.alertController.create({
         header: 'Información',
         message: 'Placeme debe ser usada solo apra mayores de 18 años.',
-        buttons: ['OK']
+        buttons: [{
+          text:'OK',
+          handler:()=>{
+            this.navCtrl.navigateForward('/inicio');
+          }
+        }]
       });
       await alert.present();
     }, 2000);

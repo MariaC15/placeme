@@ -1,0 +1,28 @@
+.menu-body{
+    --background: transparent;
+    padding: 0px;
+}
+.menu-header{
+    --background: linear-gradient(0deg, rgba(53,0,200,1) 0%, rgba(249,0,255,1) 100%);
+}
+ion-list{
+    background: transparent;
+}
+ion-item{
+    --background: transparent;
+}
+ion-menu-toggle{
+    background: transparent;
+}
+h2{
+    padding-bottom: 15px;
+    color: aliceblue;
+}
+.img-logo{
+    margin: auto;
+    display: block;
+    width: 28%;
+    padding-top: 25px;
+}
+
+

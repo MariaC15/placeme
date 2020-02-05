@@ -1,0 +1,25 @@
+<ion-header mode="ios">
+  <ion-toolbar  color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pláceme</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h1 class="ion-text-left">Anuncios</h1>
+  <br>
+  <div class="pins">
+    <div class="pin" *ngFor="let imageURL of imageUrlArray" (click)="verAnuncio()">
+      <ion-card-header>
+        <img [src]="imageURL.img">
+      </ion-card-header>
+      <ion-card-content>
+        <p>3.5 * Calificación promedio</p>
+        <p>Nac, Pais-Ciudad</p>
+        <p>Edad</p>
+      </ion-card-content>
+      <!-- <ion-label color="ligth" class="ion-text-center">Primary Label</ion-label> -->
+    </div>
+  </div>
+</ion-content>

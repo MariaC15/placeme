@@ -1,3 +1,40 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="content1" side="start" menuId="custom" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar class="menu-header">
+        <img src="../assets/img/logo-blanco.png" alt="" class="img-logo">
+        <h2 class="ion-text-center">Pláceme</h2>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="menu-body">
+      <hr>
+      <ion-list lines="none">
+        <ion-menu-toggle auto-hide="true">
+          <!-- <br> -->
+          <ion-item [routerLink]="['anuncio']">
+            <ion-icon src="../assets/img/speaker.svg" slot="start" class="icon-svg" ></ion-icon>
+              Publicar Anuncio 
+          </ion-item>
+          <br>
+          <ion-item >
+            <ion-icon src="../assets/img/accept.svg" slot="start" class="icon-svg" ></ion-icon>
+            Textos Legales 
+          </ion-item>
+          <br>
+          <ion-item [routerLink]="['contactanos']">
+            <ion-icon src="../assets/img/profile.svg" slot="start" class="icon-svg"></ion-icon>
+              Contáctanos 
+          </ion-item>
+          <br>
+          <ion-item [routerLink]="['list-anuncios']">
+            <ion-icon src="../assets/img/speaker.svg" slot="start" class="icon-svg" ></ion-icon>
+              Anuncios 
+          </ion-item>
+        </ion-menu-toggle>
+        <br>
+        <!-- <ion-button  size="large" expand="block" fill="outline" color="danger"><h4>Cerrar sesion</h4></ion-button> -->
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1"></ion-router-outlet>
 </ion-app>
